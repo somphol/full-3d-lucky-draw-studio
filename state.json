@@ -4,10 +4,10 @@
   "session": {
     "id": "ses_e563c76b2ffeglnzi2RHbjR2lu",
     "startedAt": "2026-11-05T03:32:06Z",
-    "capturedAt": "2026-11-05T03:49:57Z",
-    "elapsedSeconds": 1071,
-    "elapsed": "17m 51s",
-    "note": "Built in one OpenCode session: 3D studio, fair draw engine, bilingual UI, audio, tests, documentation, deployment and the published skill. Cache reads dominate the token total."
+    "capturedAt": "2026-11-05T03:54:22Z",
+    "elapsedSeconds": 1337,
+    "elapsed": "22m 17s",
+    "note": "Final capture after the live GitHub Pages suite passed 18/18 and the skill was published to the catalog. Built in one OpenCode session: fair draw engine, 3D studio, bilingual UI, audio, four test layers, documentation, deployment and the skill. Cache reads dominate the token total."
   },
   "model": {
     "name": "DeepSeek V4.1 Flash",
@@ -15,12 +15,12 @@
     "provider": "opencode-go"
   },
   "usage": {
-    "inputTokens": 225732,
-    "outputTokens": 97156,
-    "reasoningTokens": 61070,
-    "cacheReadTokens": 9676544,
+    "inputTokens": 254816,
+    "outputTokens": 113139,
+    "reasoningTokens": 64110,
+    "cacheReadTokens": 15563776,
     "cacheWriteTokens": 1541,
-    "totalTokens": 10062043,
+    "totalTokens": 15997382,
     "costUSD": 0,
     "note": "Read from the OpenCode session database (session_v2). totalTokens sums all five counters; cache reads are repeated prompt context and dominate the figure. costUSD is 0 on the flat-rate plan."
   },
@@ -101,7 +101,8 @@
       "Browser: boot/WebGL, self-test 18/18, roster edits, duplicates, presets",
       "Browser: spin resolves to pick, remove/keep, auto-remove, Thai, exports",
       "Browser: settings, reload restore, clear log, mobile drawer, reduced motion"
-    ]
+    ],
+    "browserChecksLive": 18
   },
   "deployment": {
     "repository": "https://github.com/somphol/full-3d-lucky-draw-studio",
@@ -109,9 +110,9 @@
     "host": "GitHub Pages",
     "branch": "main",
     "path": "/",
-    "status": "pending",
-    "verifiedAt": null,
-    "note": "Publishing in progress."
+    "status": "live",
+    "verifiedAt": "2026-11-05T03:54:22Z",
+    "note": "Pages built from main / root. The 18-check browser suite passed against the live URL with zero console errors, including the 18-check in-page self-test."
   },
   "credits": {
     "tool": "OpenCode",
@@ -124,11 +125,11 @@
   "skill": {
     "name": "lucky-draw-3d-studio",
     "title": "Lucky Draw 3D Studio",
-    "status": "pending",
+    "status": "published",
     "catalog": "https://somphol.github.io/opencode-skills/",
-    "source": "",
-    "version": "1.0.0",
+    "source": "https://github.com/somphol/opencode-skills/tree/main/lucky-draw-3d-studio",
+    "version": "cd05d4c21d72",
     "local": "~/.config/opencode/skills/lucky-draw-3d-studio",
-    "note": ""
+    "note": "Reference implementation snapshot, fairness/scene/UI/verification/release references and a scaffold script. Validated with check-skill.mjs and proven by scaffolding a fresh directory (15 files, app boots)."
   }
 }
