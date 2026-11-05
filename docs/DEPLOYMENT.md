@@ -81,6 +81,19 @@ The workflow uses Node 22 and has read-only repository permissions. Browser chec
 they require a Chrome binary and network access to the pinned CDN. Run them locally and against the
 live URL before a release.
 
+## Bootstrap sequencing
+
+The static suite asserts that `state.json` has `skill.status: "published"` and a live Pages URL. That
+creates one deliberate red run during a from-zero bootstrap:
+
+1. The repository must exist before the skill can link to it, so the first push carries
+   `skill.status: "pending"` and CI fails the state check.
+2. Publish the skill to the catalog.
+3. Update `state.json` (published status, live verification, final token counters) and push again.
+
+Only the final commit needs to be green. The failure message now says so explicitly. Do not “fix” it
+by weakening the release assertion.
+
 ## Rolling back
 
 Pages serves `main`. Revert the commit and push; the previous build returns within a minute. The app

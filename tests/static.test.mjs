@@ -166,7 +166,11 @@ test('state.json records a real session and credits', () => {
   assert.equal(state.credits.tool, 'OpenCode');
   assert.match(state.deployment.pages, /^https:\/\//);
   assert.ok(state.skill.name);
-  assert.equal(state.skill.status, 'published');
+  assert.equal(
+    state.skill.status,
+    'published',
+    'state.skill.status must be "published" in a release commit; a bootstrap commit made before the skill catalog is published will fail this check by design'
+  );
 });
 
 test('state.json line counts match the source files', () => {

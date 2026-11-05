@@ -105,6 +105,10 @@ counted from the angle and drive both the Web Audio tick and the pointer spring.
   rather than scaled indefinitely.
 - Thai labels depend on the system Thai font; no webfont is downloaded by design.
 - The browser suite needs Chrome and network access. CI runs only engine + static checks.
+- A bootstrap commit made before the skill is published fails the static `state.json` check by
+  design, so the first push of a from-zero build can show one red Verify run. Publish the skill,
+  update `state.json` and push; only the final commit needs to be green. See
+  [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md#bootstrap-sequencing).
 - Winner confetti is decorative and skipped under reduced motion, including in the reduced-motion
   browser test.
 - `state.json` records a single session; it is not updated automatically.
