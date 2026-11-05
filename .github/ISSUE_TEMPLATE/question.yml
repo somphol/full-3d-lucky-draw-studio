@@ -1,0 +1,25 @@
+name: Question
+description: Ask about using, hosting or modifying the studio
+title: "[Question] "
+labels: ["question"]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What you have tried, the docs you read, and your environment.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I read the README and docs/FAQ.md.
+          required: true
+        - label: I ran the self-test.
+          required: false

@@ -1,0 +1,134 @@
+{
+  "project": "Full 3D Lucky Draw & Prize Wheel Studio",
+  "release": "1.0.0",
+  "session": {
+    "id": "ses_e563c76b2ffeglnzi2RHbjR2lu",
+    "startedAt": "2026-11-05T03:32:06Z",
+    "capturedAt": "2026-11-05T03:49:57Z",
+    "elapsedSeconds": 1071,
+    "elapsed": "17m 51s",
+    "note": "Built in one OpenCode session: 3D studio, fair draw engine, bilingual UI, audio, tests, documentation, deployment and the published skill. Cache reads dominate the token total."
+  },
+  "model": {
+    "name": "DeepSeek V4.1 Flash",
+    "id": "deepseek-v4.1-flash",
+    "provider": "opencode-go"
+  },
+  "usage": {
+    "inputTokens": 225732,
+    "outputTokens": 97156,
+    "reasoningTokens": 61070,
+    "cacheReadTokens": 9676544,
+    "cacheWriteTokens": 1541,
+    "totalTokens": 10062043,
+    "costUSD": 0,
+    "note": "Read from the OpenCode session database (session_v2). totalTokens sums all five counters; cache reads are repeated prompt context and dominate the figure. costUSD is 0 on the flat-rate plan."
+  },
+  "artifacts": {
+    "sourceFiles": [
+      "index.html",
+      "style.css",
+      "script.js"
+    ],
+    "lineCounts": {
+      "index.html": 317,
+      "style.css": 1930,
+      "script.js": 2314,
+      "total": 4561
+    },
+    "supportingFiles": [
+      "README.md",
+      "AGENTS.md",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "CODE_OF_CONDUCT.md",
+      "SECURITY.md",
+      "SUPPORT.md",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md",
+      "state.json",
+      "docs/README.md",
+      "docs/ARCHITECTURE.md",
+      "docs/REPRODUCTION.md",
+      "docs/DESIGN.md",
+      "docs/PHYSICS.md",
+      "docs/TESTING.md",
+      "docs/DEPLOYMENT.md",
+      "docs/DECISIONS.md",
+      "docs/ACCESSIBILITY.md",
+      "docs/PERFORMANCE.md",
+      "docs/PRIVACY.md",
+      "docs/FAQ.md",
+      "docs/ROADMAP.md",
+      "tests/engine.test.mjs",
+      "tests/static.test.mjs",
+      "tests/browser.test.mjs",
+      "tests/lib/fixtures.mjs",
+      "tests/lib/harness.mjs",
+      "scripts/screenshot.mjs",
+      ".github/workflows/ci.yml",
+      ".github/ISSUE_TEMPLATE/bug_report.yml",
+      ".github/ISSUE_TEMPLATE/feature_request.yml",
+      ".github/ISSUE_TEMPLATE/question.yml",
+      ".github/pull_request_template.md",
+      ".gitignore",
+      ".editorconfig",
+      ".nojekyll",
+      "robots.txt",
+      "sitemap.xml",
+      "assets/favicon.svg",
+      "assets/studio.png",
+      "assets/winner.png",
+      "assets/thai.png",
+      "assets/mobile.png",
+      "assets/stage.png",
+      "assets/og-card.png",
+      "assets/og.html"
+    ]
+  },
+  "verification": {
+    "method": "Dependency-free Node suites plus headless Chrome over the DevTools Protocol",
+    "automatedChecks": 35,
+    "browserChecks": 18,
+    "selfTestChecks": 18,
+    "totalChecks": 71,
+    "consoleErrors": 0,
+    "checks": [
+      "Engine: slice coverage, pointer round trips, forward-only target rotation",
+      "Engine: uniform seeded picks, roster normalisation, CSV and JSON",
+      "Static: shell, import map, ids, i18n symmetry, engine purity",
+      "Static: docs set, links, community files, state metadata, no secrets",
+      "Browser: boot/WebGL, self-test 18/18, roster edits, duplicates, presets",
+      "Browser: spin resolves to pick, remove/keep, auto-remove, Thai, exports",
+      "Browser: settings, reload restore, clear log, mobile drawer, reduced motion"
+    ]
+  },
+  "deployment": {
+    "repository": "https://github.com/somphol/full-3d-lucky-draw-studio",
+    "pages": "https://somphol.github.io/full-3d-lucky-draw-studio/",
+    "host": "GitHub Pages",
+    "branch": "main",
+    "path": "/",
+    "status": "pending",
+    "verifiedAt": null,
+    "note": "Publishing in progress."
+  },
+  "credits": {
+    "tool": "OpenCode",
+    "toolURL": "https://opencode.ai",
+    "model": "DeepSeek V4.1 Flash",
+    "modelID": "opencode-go/deepseek-v4.1-flash",
+    "engine": "Three.js 0.169.0 (MIT)",
+    "license": "MIT"
+  },
+  "skill": {
+    "name": "lucky-draw-3d-studio",
+    "title": "Lucky Draw 3D Studio",
+    "status": "pending",
+    "catalog": "https://somphol.github.io/opencode-skills/",
+    "source": "",
+    "version": "1.0.0",
+    "local": "~/.config/opencode/skills/lucky-draw-3d-studio",
+    "note": ""
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://somphol.github.io/full-3d-lucky-draw-studio/sitemap.xml

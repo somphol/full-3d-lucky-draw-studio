@@ -1,0 +1,17 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Test and browser artefacts
+node_modules/
+coverage/
+*.log
+tests/screenshots/
+.ld3-*
+
+# Local tooling
+.env
+.env.*

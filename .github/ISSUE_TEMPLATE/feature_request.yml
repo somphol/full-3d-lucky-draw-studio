@@ -1,0 +1,45 @@
+name: Feature request
+description: Suggest a change or an event use case
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe the event or host problem first. The studio intentionally stays static and
+        backend-free, so proposals that need a server are likely out of scope.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: The event, the host's workflow, or the accessibility need.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What should the studio do? Include copy or interaction details if you have them.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Does it require a backend?
+      options:
+        - "No — static only"
+        - "Yes — needs a server or accounts"
+        - "Not sure"
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I read docs/DECISIONS.md and believe this fits the project.
+          required: true

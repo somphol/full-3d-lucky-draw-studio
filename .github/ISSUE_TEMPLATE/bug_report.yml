@@ -1,0 +1,69 @@
+name: Bug report
+description: Something is broken in the studio
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please do not include personal names, exported rosters or secrets.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open ...
+        2. Add ...
+        3. Spin ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - 3D wheel / rendering
+        - Spin / fairness
+        - Roster / presets
+        - Winner dialog / confetti
+        - History / export
+        - Language / sound
+        - Mobile / responsive
+        - Documentation / tooling
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and OS
+      placeholder: Chrome 130 on macOS 15
+    validations:
+      required: true
+  - type: input
+    id: selftest
+    attributes:
+      label: Self-test result
+      description: Open /?selftest and paste the summary, or run document.body.dataset.selftest.
+      placeholder: 18/18
+  - type: textarea
+    id: console
+    attributes:
+      label: Console output
+      description: Errors or warnings from DevTools, if any.
+      render: shell
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checklist
+      options:
+        - label: I searched existing issues.
+          required: true
+        - label: I ran the self-test.
+          required: false
