@@ -4,9 +4,9 @@
   "session": {
     "id": "ses_e563c76b2ffeglnzi2RHbjR2lu",
     "startedAt": "2026-11-05T03:32:06Z",
-    "capturedAt": "2026-11-05T03:54:22Z",
-    "elapsedSeconds": 1337,
-    "elapsed": "22m 17s",
+    "capturedAt": "2026-11-05T03:55:17Z",
+    "elapsedSeconds": 1391,
+    "elapsed": "23m 11s",
     "note": "Final capture after the live GitHub Pages suite passed 18/18 and the skill was published to the catalog. Built in one OpenCode session: fair draw engine, 3D studio, bilingual UI, audio, four test layers, documentation, deployment and the skill. Cache reads dominate the token total."
   },
   "model": {
@@ -15,12 +15,12 @@
     "provider": "opencode-go"
   },
   "usage": {
-    "inputTokens": 254816,
-    "outputTokens": 113139,
-    "reasoningTokens": 64110,
-    "cacheReadTokens": 15563776,
+    "inputTokens": 259722,
+    "outputTokens": 115673,
+    "reasoningTokens": 65870,
+    "cacheReadTokens": 17176192,
     "cacheWriteTokens": 1541,
-    "totalTokens": 15997382,
+    "totalTokens": 17618998,
     "costUSD": 0,
     "note": "Read from the OpenCode session database (session_v2). totalTokens sums all five counters; cache reads are repeated prompt context and dominate the figure. costUSD is 0 on the flat-rate plan."
   },
@@ -102,7 +102,8 @@
       "Browser: spin resolves to pick, remove/keep, auto-remove, Thai, exports",
       "Browser: settings, reload restore, clear log, mobile drawer, reduced motion"
     ],
-    "browserChecksLive": 18
+    "browserChecksLive": 18,
+    "skillScaffoldSelfTest": 18
   },
   "deployment": {
     "repository": "https://github.com/somphol/full-3d-lucky-draw-studio",
@@ -111,7 +112,7 @@
     "branch": "main",
     "path": "/",
     "status": "live",
-    "verifiedAt": "2026-11-05T03:54:22Z",
+    "verifiedAt": "2026-11-05T03:55:17Z",
     "note": "Pages built from main / root. The 18-check browser suite passed against the live URL with zero console errors, including the 18-check in-page self-test."
   },
   "credits": {
@@ -130,6 +131,6 @@
     "source": "https://github.com/somphol/opencode-skills/tree/main/lucky-draw-3d-studio",
     "version": "cd05d4c21d72",
     "local": "~/.config/opencode/skills/lucky-draw-3d-studio",
-    "note": "Reference implementation snapshot, fairness/scene/UI/verification/release references and a scaffold script. Validated with check-skill.mjs and proven by scaffolding a fresh directory (15 files, app boots)."
+    "note": "Reference implementation snapshot, fairness/scene/UI/verification/release references and a scaffold script. Validated with check-skill.mjs; the scaffold booted in headless Chrome and passed the 18/18 in-page self-test."
   }
 }
